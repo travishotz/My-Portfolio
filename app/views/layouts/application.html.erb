@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Travis Hotz</title>
-    <%= csrf_meta_tag %>
-    <%= render 'layouts/stylesheets' %>
-  </head>
-  <body>
-		<div id="header">
-		<%= render 'layouts/header' %>
-		</div>
-			<div id="colmask">
-				<div id="colmid">
-					<div id="colright">
-						<div id="col1wrap">
-							<div id="col1pad">
-								<div id="content">
-								<%= yield %>
-								</div>
-							</div>
-						</div>
-						<div id="mainNav">
-						<%= render 'layouts/mainNav' %>
-						</div>
-						<div id="userPanel">
-						<%= render 'layouts/userPanel' %>
-						</div>
+<head>
+  <title>Travis Hotz</title>
+  <%= csrf_meta_tag %>
+  <%= render 'layouts/stylesheets' %>
+</head>
+<body>
+<div id="header">
+<%= render 'layouts/header' %>
+</div>
+<div id="colmask">
+	<div id="colmid">
+		<div id="colright">
+			<div id="col1wrap">
+				<div id="col1pad">
+					<div id="content">
+					<%= yield %>
 					</div>
 				</div>
 			</div>
-			<div id="footer">
-      <%= render 'layouts/footer' %>
-    	</div>
-  </body>
-</html>
+			<div id="mainNav">
+			<!-- 			<%= render 'layouts/mainNav' %> -->
+			</div>
+			<div id="userPanel">
+			<%= render 'layouts/userPanel' %>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div id="example-one">
+	<%= render 'layouts/mainNav' %></div>
+   <%= render 'layouts/footer' %>
+</div>
+
+</body></html>
