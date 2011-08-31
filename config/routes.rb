@@ -1,7 +1,9 @@
 MyProjects::Application.routes.draw do
-  
+
+  match '/projects', :to => 'pages#contact'
   match '/contact', :to => 'pages#contact'
-  match '/about',  :to => 'pages#about'
+  match '/about',  :to => 'pages#about'  
+  match '/resume',  :to => 'pages#resume'
   
   root :to => 'pages#home'
 

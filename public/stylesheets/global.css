@@ -1,9 +1,9 @@
 /*** Production ***/
-/*
+
 div {
 	outline: 1px dashed red;
 }
-*/
+
 /*** GENERAL CSS ***/
 
 body {
@@ -13,9 +13,9 @@ body {
 	background:black;
 	min-width:400px;		/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
-	font: .9em Optima, Helvetica, sans-serif;
+	font: .9em Optima, "Lucida Sans Unicode", Verdana, Helvetica, sans-serif;
 	color: white;
-  background: url("../images/smoke.jpg") no-repeat scroll left top #919191;
+  background: url("../images/smoke.jpg") scroll left top #919191;
 }
 
 
@@ -27,22 +27,21 @@ body {
 }
 
 #header h1  {
+	float: right;
 	padding:.2em 15px;
 	margin:0;
   margin-top: -110px;
 	font-size: 4em;
 	text-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
 	color: white;
+	font-style: italic;
 }
 #header h2  {
-	padding: 10px 10px 25px 5px;
+	float: right;
+	padding: 5px 10px 20px 5px;
 	margin: 0;
-	margin-left: 20px;
-}
-#header a {
-	padding:.5em 15px	.2em 15px;
-	margin:0;
-	margin-left: 345px;
+	font-size: 1.2em;
+	margin-top: -20px;
 }
 
 /*** LIQUID THREE COLUMN LAYOUT ***/
@@ -91,7 +90,7 @@ body {
 	text-align: center;
 }
 
-#mainNav {
+#col2 {
     float: left;
     left: 215px;
     margin-left: -50%;
@@ -99,7 +98,7 @@ body {
     position: relative;
     width: 170px;
 }
-#userPanel {
+#col3 {
     float: left;
     left: 15px;
     overflow: hidden;
@@ -122,73 +121,40 @@ body {
 
 /*****NAV BAR ******/
 
-a {
-    color: #EEEEEE;
+#mainNav {
+	background: none;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 12em;
+	padding-bottom: 200px;
 }
-a:hover {
-    color: white;
+#mainNav li {
+	font: 1em "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-.nav-wrap {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    margin: 50px auto;
+#mainNav a {
+	background: #0A0A0A;
+	border-bottom: 1px solid #393939;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
 }
-.group:after {
-    clear: both;
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-:first-child + html .group {
-}
-
-
-#example-one {
-    list-style: none outside none;
-    margin: 0 auto;
-    position: relative;
-    width: 800px;
-}
-#example-one li {
-    display: inline-block;
-}
-#example-one a {
-    color: #BBBBBB;
-    float: left;
-    font-size: 14px;
-    padding: 6px 10px 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-#example-one a:hover {
-    color: white;
-}
-#magic-line {
-    background: none repeat scroll 0 0 #FE4902;
-    bottom: -2px;
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 100px;
-}
-.current_page_item a {
-    color: white !important;
-}
-.ie6 #example-one li, .ie7 #example-one li {
-    display: inline;
-}
-.ie6 #magic-line {
-    bottom: -3px;
+#mainNav a:hover {
+	background: #0082B5 url("/../images/hover.gif") left center no-repeat;
+	color: #fff;
+	padding-bottom: 8px;
+	font-style: italic;
 }
 
 /*Transparent*/
 
 .transbox
   {
-  width:400px;
-  height:180px;
   margin:30px 50px;
   background-color:#ffffff;
   border:1px solid black;
