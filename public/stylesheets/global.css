@@ -1,0 +1,100 @@
+/*** Production ***/
+
+/*div {
+	outline: 1px dashed red;
+}
+*/
+/*** GENERAL CSS ***/
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	background:black;
+	min-width:600px;		/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font: .9em Optima, Helvetica, sans-serif;
+	color: white;
+}
+
+#header {
+	float:left;
+	width:100%;
+	padding:0;
+	padding-top: 120px;
+}
+
+h1 {
+	font-family: Optima, Helvetica, serif; ;
+}
+#header h1  {
+	padding:.2em 15px;
+	margin:0;
+  margin-top: -115px;
+	font-size: 4em;
+	text-shadow: -4px 4px 3px #666, 1px -1px 2px #000;
+}
+#header h2  {
+	padding: 10px 10px 25px 5px;
+	margin: 0;
+	margin-left: 20px;
+}
+#header a {
+	padding:.5em 15px	.2em 15px;
+	margin:0;
+	margin-left: 345px;
+}
+
+/*** LIQUID THREE COLUMN LAYOUT ***/
+
+#colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	background: black;		/* Left column background colour */
+}
+#colmid {
+	float:left;
+	width:200%;
+	position:relative;
+	left:200px;
+	background: black;    	/* Centre column background colour */
+
+}
+#colright {
+	float:left;
+	width:100%;
+	position:relative;
+	left:50%;
+	margin-left:-400px;
+	background: black;    	/* Right column background colour */
+	border-right: solid white 2px;
+	border-left: 2px solid white;
+	padding-bottom: 400px;
+}
+#col1wrap {
+	float:right;
+	width:50%;
+	position:relative;
+	right:100%;
+}
+
+#col1pad {
+	margin:0 15px 0 415px;
+	overflow:hidden;
+}
+
+#content {
+	width:100%;
+	overflow:hidden;
+}
+
+/*** Footer ****/
+
+#footer  {
+	font-size: .8em;
+	margin: 0;
+	padding: 10px 0 0 5px;
+}
